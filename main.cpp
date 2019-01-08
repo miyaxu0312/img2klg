@@ -120,12 +120,12 @@ int main(int argc ,char** argv)
     string color_name,depth_name;
     for(int i=1;i<=201;i++)
     {
-      color_name = "depthcolor/"+"depthcolor_"+tostring(i)+".png";
+      color_name = "/home/xyx/xyx/img2klg/depthcolor_img/depthcolor_"+to_string(i)+".png";
       vcolor.push_back(color_name);
-      depth_name = "depth/"+"depth_"+tostring(i)+".png";
+      depth_name = "/home/xyx/xyx/img2klg/depth_img/depth_"+to_string(i)+".png";
       vdepth.push_back(depth_name);
     }
-    convert2klg(vcolor, vdepth, argv[2]);
+    convert2klg(vcolor, vdepth, "test.klg");
 
     return 0;
 }
